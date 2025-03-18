@@ -1,18 +1,18 @@
-import './App.css'
-import MovieCard from './components/MovieCard';
+import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
+  const movieNumber = 2
+  ;
+
   return (
     <>
-      <MovieCard movie={{title: "New Film", release_date: "2025"}}/>
-      <MovieCard movie={{title: "New Film 2", release_date: "2025"}}/>
-      <MovieCard movie={{title: "New Film 3", release_date: "2025"}}/>
-      <MovieCard movie={{title: "New Film 4", release_date: "2025"}}/>
+      <Home />
     </>
   );
 }
 
-function Text({display}) {
+function Text({ display }) {
   return (
     <div>
       <p>{display}</p>
@@ -20,4 +20,4 @@ function Text({display}) {
   );
 }
 
-export default App
+export default App;
